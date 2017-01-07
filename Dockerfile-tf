@@ -23,8 +23,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         python-scipy && \
     rm -rf /var/lib/apt/lists/*
 
+
 ENV CAFFE_ROOT=/opt/caffe
 WORKDIR $CAFFE_ROOT
+
+#https://github.com/bazelbuild/bazel/releases/tag/0.4.3
 
 # FIXME: clone a specific git tag and use ARG instead of ENV once DockerHub supports this.
 ENV CLONE_TAG=master
