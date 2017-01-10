@@ -1,4 +1,4 @@
-# openml
+# OpenML
 Open Machine Learning project.
 
 ## Include
