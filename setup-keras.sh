@@ -11,7 +11,13 @@ echo "Container name: keras."
 #echo "Jupyter port: 9888"
 #ehco "Access with http://localhost:9888, please operate as notice."
 echo "Please visit https://keras.io/,https://github.com/fchollet/keras"
+ehco "Reference https://github.com/openthings/keras"
 echo "========================================================================"
 echo
 
-docker run --name caffe -ti -p 9887:8888 openthing
+echo "Setup in docker:  https://github.com/openthings/keras/tree/master/docker"
+
+cd keras 
+make notebook
+
+#docker run --name caffe -ti -p 9887:8888 openthing
